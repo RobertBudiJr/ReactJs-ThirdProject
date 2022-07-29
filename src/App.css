@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--color-wht);
+  background-color: var(--color-bg);
+}
+
+.container {
+  margin: 40px auto;
+  width: 550px;
+  height: 550px;
+
+  background-color: var(--color-wht);
+  font-family: 'Karla', sans-serif;
+}
+
+/* Header */
+.header {
+  background-image: linear-gradient(to right, var(--color-gra-1), var(--color-gra-2));
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 2rem;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 0.43rem;
+}
+
+.header__title {
+  font-size: 1.3rem;
+  letter-spacing: -2px;
+}
+
+.header__name {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+}
+
+/* Main */
+.main {
+  margin-top: 2.1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.main__top {
+  display: flex;
+  gap: 1rem;
+}
+
+.input__first,
+.input__second {
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  outline: none;
+  transition: 0.2s;
+
+  padding-right: 5rem;
+}
+
+.input__first:focus,
+.input__second:focus {
+  border: 2px solid var(--color-gra-2);
+}
+
+.input__submit {
+  padding: 0.6rem 9.6rem;
+
+  background-image: linear-gradient(to right, var(--color-gra-1), var(--color-gra-2));
+  border: none;
+  border-radius: 5px;
+
+  font-family: 'Karla', sans-serif;
+  color: var(--color-wht);
+  font-size: 1rem;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.input__submit:hover {
+  transform: translateY(-1px);
+  box-shadow: 1px 1px 1px var(--color-gra-1);
+}
+
+.input__submit:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.main__meme {
+  width: 500px;
+  height: 100%;
+}
+
+.main__image {
+  position: absolute;
+  background-size: cover;
+
+  width: 500px;
+  max-height: 320px;
+}
+
+.main__topText,
+.main__bottomText {
+  position: relative;
+  z-index: 1;
+
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Impact', sans-serif;
+  margin: 0 auto;
+  width: fit-content;
+  font-size: 2.1em;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000, 2px 2px 5px #000;
+}
+
+.main__topText {
+  /* margin-top: -23rem; */
+  top: 1rem;
+}
+
+.main__bottomText {
+  /* margin-top: 17rem;
+  padding-bottom: 2rem; */
+  top: 14rem;
+}
